@@ -1,3 +1,4 @@
+
 # TD.Backoffice.API_DbContext
 Repositorio para versionar el código del DbContext  del proyecto TranSPEi_ApiModGes
 Proyecto TD.Backoffice.API_DbContext
@@ -10,7 +11,7 @@ Proyecto TD.Backoffice.API_DbContext
 		dotnet add package Microsoft.EntityFrameworkCore.Design --version 8.0.0
 	3.- Agregar repositorio para registar la libreria
 
-		dotnet nuget add source --username FranciscoLM01 --password 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 --store-password-in-clear-text --name github "https://nuget.pkg.github.com/FranciscoLM01/index.json"
+		dotnet nuget add source --username FranciscoLM01 --password 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 --store-password-in-clear-text --name github "https://nuget.pkg.github.com/FranciscoLM01/index.json"
 
 	3.- Compilar
 		dotnet build
@@ -20,13 +21,13 @@ Proyecto TD.Backoffice.API_DbContext
 
 	6.- Subir la libreria repositorio con githut
 
-		dotnet nuget push "bin/Release/TD.Backoffice.API_DbContext.1.0.0.nupkg" --api-key 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 --source "github"
+		dotnet nuget add source --username FranciscoLM01 --password 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 --store-password-in-clear-text --name github "https://nuget.pkg.github.com/RedEfectiva/index.json"
 
 Proyecto TranSPEi_ApiModGes
 	
 	1.- Añadir la libreria repositorio con githut
 
-	dotnet nuget add source --username FranciscoLM01 --password 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 --store-password-in-clear-text --name github "https://nuget.pkg.github.com/FranciscoLM01/index.json"
+	dotnet nuget add source --username FranciscoLM01 --password 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 --store-password-in-clear-text --name github "https://nuget.pkg.github.com/RedEfectiva/index.json"
 
 	2.- Agregar la libreria a las dependencias 
 		Ubicar el archivo Directory.Packages.props y agregar la linea:
