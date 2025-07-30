@@ -50,6 +50,23 @@ namespace TD.Backoffice.API_DbContext.Domain.Entities
         public int? nIdUsuarioProcesoPadre { get; set; } = null;
 
         /// <summary>
+        /// Icono asociado al proceso para la interfaz de usuario.
+        /// </summary>
+        [MaxLength(64)]
+        public string? sIcono { get; set; } = null;
+
+        /// <summary>
+        /// Orden de visualización del proceso en menús.
+        /// </summary>
+        public int nOrden { get; set; } = 0;
+
+        /// <summary>
+        /// Grupo al que pertenece el proceso para agrupación en menús.
+        /// </summary>
+        [MaxLength(100)]
+        public string? sGrupo { get; set; } = null;
+
+        /// <summary>
         /// Representa el proceso padre, si existe.
         /// </summary>
         public virtual UsuarioProceso? UsuarioProcesoPadre { get; set; } = null;

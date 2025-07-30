@@ -1,10 +1,18 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<Version>1.0.2</Version>
+		<Version>1.0.3</Version>
 		<TargetFramework>net8.0</TargetFramework>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>enable</Nullable>
+		
+		<!-- Configuración del paquete NuGet -->
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<PackageId>TD.Backoffice.API_DbContext</PackageId>
+		<PackageVersion>1.0.3</PackageVersion>
+		<Authors>TD Plus Team</Authors>
+		<Description>Contexto de base de datos para TD Backoffice API con entidades actualizadas (íconos, orden, grupos)</Description>
+		<PackageReleaseNotes>v1.0.3: Agregados campos sIcono, nOrden, sGrupo a UsuarioProceso para gestión dinámica de menús</PackageReleaseNotes>
 	</PropertyGroup>
 
 	<ItemGroup>
